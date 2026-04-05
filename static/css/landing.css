@@ -1,0 +1,198 @@
+/* ------------------------------------------------------------------ */
+/* Landing page — hero                                                 */
+/* ------------------------------------------------------------------ */
+
+.hero-new {
+    padding: 5rem 2rem 4rem;
+    background: #fff;
+}
+
+.hero-new-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+/* Badge */
+.hero-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e8f5ee;
+    color: #2d6a4f;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #c3e6cb;
+}
+
+.hero-pill-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #40b06a;
+    flex-shrink: 0;
+}
+
+/* Title */
+.hero-new-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 0;
+}
+
+.hero-new-title-green {
+    color: #40b06a;
+    font-style: normal;
+}
+
+/* Subtitle */
+.hero-new-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0;
+}
+
+/* Buttons */
+.hero-new-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-hero-dark {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-hero-dark:hover {
+    background: var(--accent);
+}
+
+/* Dashboard mockup */
+.mock-dashboard {
+    width: 100%;
+    max-width: 720px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.07);
+    padding: 1.25rem 1.5rem 1.75rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.mock-win-dots {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.win-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.win-dot-red    { background: #ff5f57; }
+.win-dot-yellow { background: #febc2e; }
+.win-dot-green  { background: #28c840; }
+
+/* Stat cards */
+.mock-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mock-stat-card {
+    background: var(--paper);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.1rem;
+}
+
+.mock-stat-label {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.3rem;
+}
+
+.mock-stat-value {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.mock-stat-change {
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.mock-stat-red   { color: #e03e3e; }
+.mock-stat-green { color: #40b06a; }
+
+.mock-stat-sub {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+}
+
+/* Chart */
+.mock-chart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mock-chart-row {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mock-chart-label {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+.mock-chart-track {
+    height: 8px;
+    background: var(--border-soft);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.mock-chart-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .mock-stats-row { grid-template-columns: 1fr; }
+    .hero-new { padding: 3rem 1rem 2.5rem; }
+}
